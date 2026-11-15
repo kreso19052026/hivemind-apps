@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kako instalirati HiveMind</title>
-  <meta name="description" content="Instaliraj HiveMind na Windows ili Linux i upari ga s mobitelom, korak po korak sa slikama.">
+  <title>Kako instalirati Hivemind</title>
+  <meta name="description" content="Instaliraj Hivemind na Windows ili Linux i upari ga s mobitelom, korak po korak sa slikama.">
   <link rel="icon" href="../img/icon.svg" type="image/svg+xml">
   <link rel="icon" href="../img/icon.png" type="image/png">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <header class="top"><div class="in">
-  <a class="brand" href="./"><img src="../img/icon.svg" alt="">HiveMind</a>
+  <a class="brand" href="./"><img src="../img/icon.svg" alt="">Hivemind</a>
   <nav>
     <a href="./#download">Preuzimanje</a>
     <a href="install.html">Kako instalirati</a>
@@ -21,8 +21,8 @@
 </div></header>
 
 <main>
-  <h1>Kako instalirati HiveMind na računalo</h1>
-  <p class="muted">Oko 10 minuta. Trebaju ti računalo, mobitel s HiveMindom i jedna Wi‑Fi mreža za oba.</p>
+  <h1>Kako instalirati Hivemind na računalo</h1>
+  <p class="muted">Oko 10 minuta. Trebaju ti računalo, mobitel s Hivemindom i jedna Wi‑Fi mreža za oba.</p>
   <p class="small muted">Nazivi u sustavu Windows navedeni su hrvatski, a u zagradi engleski, ako ti je Windows na engleskom.</p>
   <div class="tabs">
     <a href="#windows">1 · Instalacija na Windows</a>
@@ -49,10 +49,10 @@
       <li>
         <h3>Raspakiraj</h3>
         <p>Desni klik na zip → <span class="ui">Izdvoji sve…</span> (Extract All) → odaberi mjesto koje ćeš lako naći, npr. <b>Dokumenti</b> → <span class="ui">Izdvoji</span> (Extract).</p>
-        <p class="small muted">Ne pokreći HiveMind iznutra zipa: trebaju mu datoteke pokraj njega.</p>
+        <p class="small muted">Ne pokreći Hivemind iznutra zipa: trebaju mu datoteke pokraj njega.</p>
       </li>
       <li>
-        <h3>Pokreni HiveMind</h3>
+        <h3>Pokreni Hivemind</h3>
         <p>Otvori mapu <b>HiveMind</b> i dvaput klikni <code>hivemind.exe</code>.</p>
         <div class="box"><b>„Windows je zaštitio vaše računalo” (Windows protected your PC)?</b>Klikni <span class="ui">Više informacija</span> (More info) → <span class="ui">Svejedno pokreni</span> (Run anyway). Windows to prikazuje za nove programe koji još nisu potpisani. Pojavi se samo jednom.</div>
         <div class="box"><b>„Pametna kontrola aplikacija je blokirala aplikaciju” (Smart App Control)?</b>Pogledaj <a href="#smart-app-control">Smart App Control</a> niže.</div>
@@ -60,11 +60,11 @@
       <li>
         <h3>Dopusti mu kućnu mrežu</h3>
         <p>Windows jednom pita: označi <span class="ui">Privatne mreže</span> (Private networks) → <span class="ui">Dopusti pristup</span> (Allow access). Tako ga mobitel može pronaći. „Javne mreže” (Public networks) ostavi neoznačene.</p>
-        <p class="small muted">Pitanje se može pojaviti tek kad HiveMind prvi put traži uređaje (korak 2 niže).</p>
+        <p class="small muted">Pitanje se može pojaviti tek kad Hivemind prvi put traži uređaje (korak 2 niže).</p>
       </li>
       <li>
         <h3>Lakše idući put (po želji)</h3>
-        <p>Desni klik na <code>hivemind.exe</code> → <span class="ui">Prikvači na Start</span> (Pin to Start; na Windowsima 11 najprije <span class="ui">Prikaži više mogućnosti</span>), ili <span class="ui">Pošalji u</span> → <span class="ui">Radna površina (stvori prečac)</span>. U HiveMindu <b>Postavke</b> → <span class="ui">Pokreni s Windowsima</span> drži ga spremnim u traci pokraj sata.</p>
+        <p>Desni klik na <code>hivemind.exe</code> → <span class="ui">Prikvači na Start</span> (Pin to Start; na Windowsima 11 najprije <span class="ui">Prikaži više mogućnosti</span>), ili <span class="ui">Pošalji u</span> → <span class="ui">Radna površina (stvori prečac)</span>. U Hivemindu <b>Postavke</b> → <span class="ui">Pokreni s Windowsima</span> drži ga spremnim u traci pokraj sata.</p>
       </li>
     </ol>
     <p>Dalje: <a href="#pair">upari ga s mobitelom</a>.</p>
@@ -91,12 +91,12 @@
         <p class="small muted">Samo dodaje stavku s ikonom u izbornik, za tvog korisnika; lozinka nije potrebna. Kasnije premjestiš mapu? Pokreni ga ponovno.</p>
       </li>
       <li>
-        <h3>Pokreni HiveMind</h3>
-        <p>Potraži <b>HiveMind</b> u izborniku aplikacija. Ili u terminalu: <code>~/HiveMind/hivemind</code></p>
+        <h3>Pokreni Hivemind</h3>
+        <p>Potraži <b>Hivemind</b> u izborniku aplikacija. Ili u terminalu: <code>~/HiveMind/hivemind</code></p>
       </li>
       <li>
         <h3>Neka se uređaji pronađu</h3>
-        <p>„Pronađeno u blizini” koristi <code>avahi-daemon</code>, koji Ubuntu, Fedora i Mint već pokreću. Ako si uključio vatrozid (<code>ufw</code>), dopusti HiveMindov port i pronalaženje uređaja:</p>
+        <p>„Pronađeno u blizini” koristi <code>avahi-daemon</code>, koji Ubuntu, Fedora i Mint već pokreću. Ako si uključio vatrozid (<code>ufw</code>), dopusti Hivemindov port i pronalaženje uređaja:</p>
         <pre><code>sudo ufw allow 47800:47801/tcp
 sudo ufw allow 5353/udp</code></pre>
       </li>
@@ -107,7 +107,7 @@ sudo ufw allow 5353/udp</code></pre>
   <!-- ============================================================ Pairing -->
   <section class="part" id="pair">
     <h2>Uparivanje s mobitelom</h2>
-    <p>Mobitel i računalo spoji na <b>istu Wi‑Fi mrežu</b> i otvori HiveMind na oba. Računalo postaje <b>glavni uređaj</b> (pokreće modele), a mobitel njegov <b>pomoćnik</b>.</p>
+    <p>Mobitel i računalo spoji na <b>istu Wi‑Fi mrežu</b> i otvori Hivemind na oba. Računalo postaje <b>glavni uređaj</b> (pokreće modele), a mobitel njegov <b>pomoćnik</b>.</p>
     <ol class="steps">
       <li>
         <h3><span class="who phone">Mobitel</span>Prikaži kod za uparivanje</h3>
@@ -151,7 +151,7 @@ sudo ufw allow 5353/udp</code></pre>
     <details id="not-found">
       <summary>Mobitel i računalo se ne pronalaze</summary>
       <ul>
-        <li>Oba na <b>istoj Wi‑Fi mreži</b>, ne na mreži za goste, i HiveMind otvoren na oba.</li>
+        <li>Oba na <b>istoj Wi‑Fi mreži</b>, ne na mreži za goste, i Hivemind otvoren na oba.</li>
         <li><b>Windows:</b> tvoja Wi‑Fi mreža mora biti <b>privatna</b>: Postavke → Mreža i internet → Wi‑Fi → tvoja mreža → <span class="ui">Privatna mreža</span> (Private network).</li>
         <li><b>Windows:</b> ako si kliknuo „Odustani” kad je Windows pitao za mrežu: Sigurnost sustava Windows → Vatrozid i zaštita mreže → <span class="ui">Dopusti aplikaciju kroz vatrozid</span> (Allow an app through firewall) → <span class="ui">Promijeni postavke</span> → označi <b>Privatno</b> pokraj svake stavke <b>hivemind</b> → U redu.</li>
         <li><b>Linux:</b> naredbe za <code>ufw</code> iz <a href="#linux">5. koraka</a>.</li>
@@ -167,9 +167,9 @@ sudo ufw allow 5353/udp</code></pre>
 
     <details id="smart-app-control">
       <summary>Windows 11: „Smart App Control je blokirao aplikaciju koja bi mogla biti nesigurna”</summary>
-      <p>Smart App Control (Pametna kontrola aplikacija) blokira svaki program koji nije potpisan i nema „svejedno pokreni” za jedan program. HiveMind još nije potpisan. Možeš:</p>
+      <p>Smart App Control (Pametna kontrola aplikacija) blokira svaki program koji nije potpisan i nema „svejedno pokreni” za jedan program. Hivemind još nije potpisan. Možeš:</p>
       <ul>
-        <li>pričekati potpisanu verziju HiveMinda (Microsoft Store), ili</li>
+        <li>pričekati potpisanu verziju Hiveminda (Microsoft Store), ili</li>
         <li>isključiti Smart App Control: Sigurnost sustava Windows → Kontrola aplikacija i preglednika → postavke za Smart App Control → <span class="ui">Isključeno</span> (Off). Na nekim verzijama Windowsa ne može se ponovno uključiti bez ponovne instalacije Windowsa, pa dobro razmisli.</li>
       </ul>
     </details>
@@ -180,7 +180,7 @@ sudo ufw allow 5353/udp</code></pre>
     </details>
 
     <details>
-      <summary>Linux: HiveMind se ne pokreće</summary>
+      <summary>Linux: Hivemind se ne pokreće</summary>
       <p>Pokreni ga u terminalu da vidiš zašto: <code>~/HiveMind/hivemind</code></p>
       <ul>
         <li>Nedostaje <code>libgtk-3.so.0</code>: <code>sudo apt install libgtk-3-0</code> (Fedora: <code>sudo dnf install gtk3</code>).</li>
@@ -191,7 +191,7 @@ sudo ufw allow 5353/udp</code></pre>
 
     <details>
       <summary>Mobitel nakon nekog vremena prestane pomagati</summary>
-      <p>Mnogi mobiteli zaustavljaju aplikacije u pozadini. Na mobitelu HiveMind prikazuje <b>Pomaži i u pozadini</b> s koracima za marku tvog mobitela; napravi ih jednom. Pogledaj <a href="guide.html#phones">Da mobiteli i dalje pomažu</a>.</p>
+      <p>Mnogi mobiteli zaustavljaju aplikacije u pozadini. Na mobitelu Hivemind prikazuje <b>Pomaži i u pozadini</b> s koracima za marku tvog mobitela; napravi ih jednom. Pogledaj <a href="guide.html#phones">Da mobiteli i dalje pomažu</a>.</p>
     </details>
   </section>
 
@@ -199,13 +199,13 @@ sudo ufw allow 5353/udp</code></pre>
   <section class="part" id="update">
     <h2>Ažuriranje i uklanjanje</h2>
     <ul>
-      <li><b>Ažuriranje:</b> preuzmi novu verziju, zatvori HiveMind (Windows: ikona u traci pokraj sata → Quit; Linux: zatvori prozor) i stavi novu mapu <b>HiveMind</b> umjesto stare. Modeli, razgovori i upareni uređaji ostaju: čuvaju se u tvojoj korisničkoj mapi, ne u mapi HiveMind. Ažuriraj i mobitel: svi uređaji trebaju imati istu verziju.</li>
-      <li><b>Uklanjanje na Windowsima:</b> u HiveMindu isključi <span class="ui">Pokreni s Windowsima</span>, zatvori ga i obriši mapu HiveMind. Za brisanje i modela i razgovora obriši <code>%APPDATA%\dev.hivemind</code>.</li>
+      <li><b>Ažuriranje:</b> preuzmi novu verziju, zatvori Hivemind (Windows: ikona u traci pokraj sata → Quit; Linux: zatvori prozor) i stavi novu mapu <b>HiveMind</b> umjesto stare. Modeli, razgovori i upareni uređaji ostaju: čuvaju se u tvojoj korisničkoj mapi, ne u mapi Hivemind. Ažuriraj i mobitel: svi uređaji trebaju imati istu verziju.</li>
+      <li><b>Uklanjanje na Windowsima:</b> u Hivemindu isključi <span class="ui">Pokreni s Windowsima</span>, zatvori ga i obriši mapu HiveMind. Za brisanje i modela i razgovora obriši <code>%APPDATA%\dev.hivemind</code>.</li>
       <li><b>Uklanjanje na Linuxu:</b> <code>~/HiveMind/install.sh --remove</code>, zatim obriši mapu HiveMind. Modeli i razgovori: <code>~/.local/share/dev.hivemind.hivemind</code>.</li>
     </ul>
   </section>
 </main>
-<footer>HiveMind · <a href="./">Preuzimanje</a> · <a href="guide.html">Upute</a> · <a href="https://github.com/kreso19052026/hivemind-apps/releases">Sva izdanja</a></footer>
+<footer>Hivemind · <a href="./">Preuzimanje</a> · <a href="guide.html">Upute</a> · <a href="https://github.com/kreso19052026/hivemind-apps/releases">Sva izdanja</a> · <a href="../privacy.html">Privatnost</a></footer>
 <script src="../app.js"></script>
 </body>
 </html>

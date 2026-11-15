@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>How to install HiveMind</title>
-  <meta name="description" content="Install HiveMind on Windows or Linux and pair it with your phone, step by step with pictures.">
+  <title>How to install Hivemind</title>
+  <meta name="description" content="Install Hivemind on Windows or Linux and pair it with your phone, step by step with pictures.">
   <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="icon" href="img/icon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top"><div class="in">
-  <a class="brand" href="./"><img src="img/icon.svg" alt="">HiveMind</a>
+  <a class="brand" href="./"><img src="img/icon.svg" alt="">Hivemind</a>
   <nav>
     <a href="./#download">Download</a>
     <a href="install.html">How to install</a>
@@ -21,8 +21,8 @@
 </div></header>
 
 <main>
-  <h1>How to install HiveMind on your computer</h1>
-  <p class="muted">About 10 minutes. You need the computer, your phone with HiveMind, and one Wi‑Fi network for both.</p>
+  <h1>How to install Hivemind on your computer</h1>
+  <p class="muted">About 10 minutes. You need the computer, your phone with Hivemind, and one Wi‑Fi network for both.</p>
   <div class="tabs">
     <a href="#windows">1 · Install on Windows</a>
     <a href="#linux">1 · Install on Linux</a>
@@ -43,15 +43,15 @@
       <li>
         <h3>Unblock the zip (recommended)</h3>
         <p>Open your <b>Downloads</b> folder. Right-click <code>HiveMind-windows-x64.zip</code> → <span class="ui">Properties</span>. At the bottom, tick <span class="ui">Unblock</span> → <span class="ui">OK</span>.</p>
-        <p class="small muted">This spares you a blue warning when HiveMind starts. No "Unblock" box? Then skip this step.</p>
+        <p class="small muted">This spares you a blue warning when Hivemind starts. No "Unblock" box? Then skip this step.</p>
       </li>
       <li>
         <h3>Unzip it</h3>
         <p>Right-click the zip → <span class="ui">Extract All…</span> → pick a place you'll find again, for example <b>Documents</b> → <span class="ui">Extract</span>.</p>
-        <p class="small muted">Don't start HiveMind from inside the zip: it needs the files next to it.</p>
+        <p class="small muted">Don't start Hivemind from inside the zip: it needs the files next to it.</p>
       </li>
       <li>
-        <h3>Start HiveMind</h3>
+        <h3>Start Hivemind</h3>
         <p>Open the <b>HiveMind</b> folder and double-click <code>hivemind.exe</code>.</p>
         <div class="box"><b>"Windows protected your PC"?</b>Click <span class="ui">More info</span> → <span class="ui">Run anyway</span>. Windows shows this for new programs that aren't signed yet. It appears once.</div>
         <div class="box"><b>"Smart App Control blocked an app"?</b>See <a href="#smart-app-control">Smart App Control</a> below.</div>
@@ -59,11 +59,11 @@
       <li>
         <h3>Allow it on your home network</h3>
         <p>Windows asks once: tick <span class="ui">Private networks</span> → <span class="ui">Allow access</span>. This lets your phone find the computer. Leave "Public networks" unticked.</p>
-        <p class="small muted">The question may only come the first time HiveMind looks for devices (step 2 below).</p>
+        <p class="small muted">The question may only come the first time Hivemind looks for devices (step 2 below).</p>
       </li>
       <li>
         <h3>Easier next time (optional)</h3>
-        <p>Right-click <code>hivemind.exe</code> → <span class="ui">Pin to Start</span> (Windows 11: <span class="ui">Show more options</span> first), or <span class="ui">Send to</span> → <span class="ui">Desktop (create shortcut)</span>. In HiveMind, <b>Settings</b> → <span class="ui">Start with Windows</span> keeps it ready in the tray, next to the clock.</p>
+        <p>Right-click <code>hivemind.exe</code> → <span class="ui">Pin to Start</span> (Windows 11: <span class="ui">Show more options</span> first), or <span class="ui">Send to</span> → <span class="ui">Desktop (create shortcut)</span>. In Hivemind, <b>Settings</b> → <span class="ui">Start with Windows</span> keeps it ready in the tray, next to the clock.</p>
       </li>
     </ol>
     <p>Next: <a href="#pair">pair it with your phone</a>.</p>
@@ -89,12 +89,12 @@
         <p class="small muted">It only adds a menu entry with the icon, for your user; no password needed. Moved the folder later? Run it again.</p>
       </li>
       <li>
-        <h3>Start HiveMind</h3>
-        <p>Search for <b>HiveMind</b> in your app menu. Or in a terminal: <code>~/HiveMind/hivemind</code></p>
+        <h3>Start Hivemind</h3>
+        <p>Search for <b>Hivemind</b> in your app menu. Or in a terminal: <code>~/HiveMind/hivemind</code></p>
       </li>
       <li>
         <h3>Let devices find each other</h3>
-        <p>"Found nearby" uses <code>avahi-daemon</code>, which desktop Ubuntu, Fedora and Mint already run. If you turned on a firewall (<code>ufw</code>), allow HiveMind's port and device discovery:</p>
+        <p>"Found nearby" uses <code>avahi-daemon</code>, which desktop Ubuntu, Fedora and Mint already run. If you turned on a firewall (<code>ufw</code>), allow Hivemind's port and device discovery:</p>
         <pre><code>sudo ufw allow 47800:47801/tcp
 sudo ufw allow 5353/udp</code></pre>
       </li>
@@ -105,7 +105,7 @@ sudo ufw allow 5353/udp</code></pre>
   <!-- ============================================================ Pairing -->
   <section class="part" id="pair">
     <h2>Pair with your phone</h2>
-    <p>Put the phone and the computer on the <b>same Wi‑Fi</b> and open HiveMind on both. The computer becomes the <b>main device</b> (it runs the models); the phone becomes its <b>helper</b>.</p>
+    <p>Put the phone and the computer on the <b>same Wi‑Fi</b> and open Hivemind on both. The computer becomes the <b>main device</b> (it runs the models); the phone becomes its <b>helper</b>.</p>
     <ol class="steps">
       <li>
         <h3><span class="who phone">Phone</span>Show the pairing code</h3>
@@ -149,7 +149,7 @@ sudo ufw allow 5353/udp</code></pre>
     <details id="not-found">
       <summary>The phone and computer don't find each other</summary>
       <ul>
-        <li>Both on the <b>same Wi‑Fi</b>, not a guest network, and HiveMind open on both.</li>
+        <li>Both on the <b>same Wi‑Fi</b>, not a guest network, and Hivemind open on both.</li>
         <li><b>Windows:</b> your Wi‑Fi must be a <b>private</b> network: Settings → Network &amp; internet → Wi‑Fi → your network → <span class="ui">Private network</span>.</li>
         <li><b>Windows:</b> if you clicked "Cancel" when Windows asked about the network: Windows Security → Firewall &amp; network protection → <span class="ui">Allow an app through firewall</span> → <span class="ui">Change settings</span> → tick <b>Private</b> next to every <b>hivemind</b> entry → OK.</li>
         <li><b>Linux:</b> the <code>ufw</code> lines in <a href="#linux">step 5</a>.</li>
@@ -165,9 +165,9 @@ sudo ufw allow 5353/udp</code></pre>
 
     <details id="smart-app-control">
       <summary>Windows 11: "Smart App Control blocked an app that may be unsafe"</summary>
-      <p>Smart App Control blocks every program that isn't signed, and has no "run anyway" for a single program. HiveMind isn't signed yet. You can:</p>
+      <p>Smart App Control blocks every program that isn't signed, and has no "run anyway" for a single program. Hivemind isn't signed yet. You can:</p>
       <ul>
-        <li>wait for the signed version of HiveMind (Microsoft Store), or</li>
+        <li>wait for the signed version of Hivemind (Microsoft Store), or</li>
         <li>turn Smart App Control off: Windows Security → App &amp; browser control → Smart App Control settings → <span class="ui">Off</span>. On some versions of Windows it can't be turned back on without reinstalling Windows, so decide carefully.</li>
       </ul>
     </details>
@@ -178,7 +178,7 @@ sudo ufw allow 5353/udp</code></pre>
     </details>
 
     <details>
-      <summary>Linux: HiveMind doesn't start</summary>
+      <summary>Linux: Hivemind doesn't start</summary>
       <p>Start it in a terminal to see why: <code>~/HiveMind/hivemind</code></p>
       <ul>
         <li><code>libgtk-3.so.0</code> missing: <code>sudo apt install libgtk-3-0</code> (Fedora: <code>sudo dnf install gtk3</code>).</li>
@@ -189,7 +189,7 @@ sudo ufw allow 5353/udp</code></pre>
 
     <details>
       <summary>The phone stops helping after a while</summary>
-      <p>Many phones stop apps in the background. On the phone, HiveMind shows <b>Keep helping in the background</b> with the steps for your phone's brand; do them once. See <a href="guide.html#phones">Keep phones helping</a>.</p>
+      <p>Many phones stop apps in the background. On the phone, Hivemind shows <b>Keep helping in the background</b> with the steps for your phone's brand; do them once. See <a href="guide.html#phones">Keep phones helping</a>.</p>
     </details>
   </section>
 
@@ -197,13 +197,13 @@ sudo ufw allow 5353/udp</code></pre>
   <section class="part" id="update">
     <h2>Update or remove</h2>
     <ul>
-      <li><b>Update:</b> download the new version, quit HiveMind (Windows: the tray icon next to the clock → <span class="ui">Quit</span>; Linux: close its window), and put the new <b>HiveMind</b> folder in place of the old one. Your models, chats and paired devices stay: they're kept in your user folder, not in the HiveMind folder. Update the phone too: all devices should run the same version.</li>
-      <li><b>Remove on Windows:</b> in HiveMind turn off <span class="ui">Start with Windows</span>, quit it, and delete the HiveMind folder. To delete your models and chats too, delete <code>%APPDATA%\dev.hivemind</code>.</li>
+      <li><b>Update:</b> download the new version, quit Hivemind (Windows: the tray icon next to the clock → <span class="ui">Quit</span>; Linux: close its window), and put the new <b>HiveMind</b> folder in place of the old one. Your models, chats and paired devices stay: they're kept in your user folder, not in the HiveMind folder. Update the phone too: all devices should run the same version.</li>
+      <li><b>Remove on Windows:</b> in Hivemind turn off <span class="ui">Start with Windows</span>, quit it, and delete the HiveMind folder. To delete your models and chats too, delete <code>%APPDATA%\dev.hivemind</code>.</li>
       <li><b>Remove on Linux:</b> <code>~/HiveMind/install.sh --remove</code>, then delete the HiveMind folder. Models and chats: <code>~/.local/share/dev.hivemind.hivemind</code>.</li>
     </ul>
   </section>
 </main>
-<footer>HiveMind · <a href="./">Download</a> · <a href="guide.html">User guide</a> · <a href="https://github.com/kreso19052026/hivemind-apps/releases">All releases</a></footer>
+<footer>Hivemind · <a href="./">Download</a> · <a href="guide.html">User guide</a> · <a href="https://github.com/kreso19052026/hivemind-apps/releases">All releases</a> · <a href="privacy.html">Privacy</a></footer>
 <script src="app.js"></script>
 </body>
 </html>
