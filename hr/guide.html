@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="hr" data-repo="kreso19052026/hivemind-apps">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HiveMind upute</title>
+  <meta name="description" content="Kako instalirati i koristiti HiveMind: Solo, Veliki model, Tim, Poveži, uparivanje uređaja i rješavanje problema.">
+  <link rel="icon" href="../img/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="../img/icon.png" type="image/png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="./"><img src="../img/icon.svg" alt="">HiveMind</a>
+  <nav>
+    <a href="./#download">Preuzimanje</a>
+    <a href="install.html">Kako instalirati</a>
+    <a href="guide.html">Upute</a>
+    <a href="../guide.html" lang="en">English</a>
+  </nav>
+</div></header>
+
+<main class="guide">
+  <aside>
+    <a href="#install">1. Instalacija</a>
+    <a href="#windows-blocked">Windows blokira aplikaciju</a>
+    <a href="#solo">2. Prvi razgovor (Solo)</a>
+    <a href="#models">3. Modeli</a>
+    <a href="#devices">4. Dodaj svoje uređaje</a>
+    <a href="#roles">Glavni, Pomoćnik, Nadzor</a>
+    <a href="#big-model">5. Veliki model</a>
+    <a href="#team">6. Tim</a>
+    <a href="#connect">7. Poveži: druge aplikacije</a>
+    <a href="#ask">Pitaj o tekstu</a>
+    <a href="#settings">8. Korisne postavke</a>
+    <a href="#phones">Da mobiteli i dalje pomažu</a>
+    <a href="#ads">Oglasi (Android)</a>
+    <a href="#update">Ažuriranje</a>
+    <a href="#trouble">Rješavanje problema</a>
+  </aside>
+
+  <div>
+    <h1>Upute</h1>
+    <p class="muted">HiveMind pokreće AI modele na tvom prijenosniku i mobitelima. AI radi na tvojim uređajima, bez računa i bez oblaka (osim ako ga sam ne dodaš).</p>
+
+    <section id="install">
+      <h2>1. Instalacija</h2>
+      <p><b>Android:</b> instaliraj HiveMind s <a href="https://play.google.com/store/apps/details?id=dev.hivemind.hivemind">Google Playa</a> i dopusti obavijesti.</p>
+      <p><b>Windows i Linux:</b> slijedi <a href="install.html">Kako instalirati</a>, korak po korak sa slikama: preuzmi, raspakiraj, pokreni HiveMind, dopusti mu kućnu mrežu, upari ga s mobitelom. Na mobitelu <b>Uređaji → Dodaj svoje računalo → Pošalji poveznicu na računalo</b> šalje ti adresu ove stranice (e-poštom, porukom ili Quick Shareom).</p>
+      <p>Program i AI pogon dolaze zajedno; ništa drugo ne treba instalirati. Modeli se preuzimaju u aplikaciji.</p>
+    </section>
+
+    <section id="windows-blocked">
+      <h2>Windows blokira aplikaciju</h2>
+      <p>HiveMind još nije potpisan, pa je Windows oprezan (više u <a href="install.html#trouble">Kako instalirati → Nešto nije uspjelo</a>):</p>
+      <ul>
+        <li><b>„Windows je zaštitio vaše računalo”</b> (SmartScreen): klikni <b>Dodatne informacije → Svejedno pokreni</b>. Deblokiranje zipa prije raspakiravanja to izbjegava.</li>
+        <li><b>„Smart App Control je blokirao aplikaciju koja možda nije sigurna”</b> (Windows 11): za jednu aplikaciju nema „svejedno pokreni”. Smart App Control možeš isključiti u Sigurnost sustava Windows → Kontrola aplikacija i preglednika → Smart App Control. Na nekim verzijama Windowsa ne može se ponovno uključiti bez ponovne instalacije, pa dobro razmisli ili pričekaj verziju iz Microsoft Storea, koja je potpisana.</li>
+      </ul>
+    </section>
+
+    <section id="solo">
+      <h2>2. Prvi razgovor (Solo)</h2>
+      <ol>
+        <li>Najprije preuzmi model (<a href="#models">Modeli</a>).</li>
+        <li>Otvori <b>Solo</b>, gore odaberi model, pritisni <b>Učitaj</b>. Veliki modeli na mobitelu ili starijem prijenosniku treba vremena.</li>
+        <li>Upiši poruku i pritisni Enter (Shift+Enter za novi red).</li>
+      </ol>
+      <p>Iznad razgovora:</p>
+      <ul>
+        <li><b>Spremljeni razgovori</b> (sat): svaki razgovor sprema se nakon svakog odgovora. Dodirni ga da nastaviš, preimenuješ ili izbrišeš.</li>
+        <li><b>Razmisli</b> (Qwen3 modeli): uključeno, model razmisli prije odgovora (bolje za teška pitanja); isključeno, odgovara odmah.</li>
+        <li><b>Upute za model</b> (klizači): kako da model odgovara, npr. „Odgovaraj na hrvatskom” ili gotove upute poput Učitelj ili Prevoditelj.</li>
+        <li><b>Izvezi</b> sprema razgovor kao Markdown. <b>Novi razgovor</b> počinje ispočetka (stari ostaje spremljen).</li>
+      </ul>
+      <p>Ispod svake poruke: <b>Kopiraj</b>, <b>Pročitaj naglas</b>, <b>Odgovori ponovno</b> (zadnji odgovor) i <b>Uredi i pitaj ponovno</b> (tvoja pitanja).</p>
+      <p><b>Datoteke i slike:</b> spajalica prilaže PDF, Word, Excel, PowerPoint, EPUB ili tekstnu datoteku; pitaj o njoj u istoj poruci. Za datoteku predugu za model nudi se <b>Tim → Dokument</b>. Za slike treba model označen <b>„čita slike”</b> (npr. Qwen3-VL 2B).</p>
+    </section>
+
+    <section id="models">
+      <h2>3. Modeli</h2>
+      <ul>
+        <li><b>Katalog:</b> svaki redak kaže <b>Stane na ovaj uređaj</b>, <b>Stane uz Veliki model</b> (s pomoćnicima) ili <b>Prevelik</b>. Pretraživanje, filtar po vrsti (razgovor, čita slike, glas i ugrađivanja), <b>Samo ono što stane</b>, poredak po veličini. Odaberi više njih i preuzmi zajedno; licencu svakog modela prihvaćaš prije preuzimanja.</li>
+        <li><b>Dodaj s Hugging Face poveznice:</b> zalijepi poveznicu na <code>.gguf</code> datoteku za model koji nije u katalogu. Preuzimanje se provjerava kao i ostala.</li>
+        <li><b>Na ovom uređaju:</b> što je spremljeno; brisanjem oslobađaš prostor; <b>Pošalji na…</b> kopira model na upareni uređaj preko Wi‑Fija (ili svim pomoćnicima odjednom).</li>
+        <li><b>Drugi uređaji:</b> što imaju tvoji ostali uređaji; glavni uređaj može izbrisati model s pomoćnika.</li>
+      </ul>
+      <p class="note">Dobar početak: <b>Qwen3 4B Instruct</b> na prijenosniku ili jačem mobitelu, <b>Qwen3 1.7B</b> na starijem mobitelu, <b>Qwen3-VL 2B</b> za slike.</p>
+    </section>
+
+    <section id="devices">
+      <h2>4. Dodaj svoje uređaje</h2>
+      <ol>
+        <li>Svi uređaji na <b>istoj Wi‑Fi mreži</b>, HiveMind pokrenut na svakom.</li>
+        <li>Na uređaju koji dodaješ (mobitel): <b>Prikaži kod za uparivanje</b> (zaslon Uređaji ili Stanje na pomoćniku).</li>
+        <li>Na glavnom uređaju (prijenosnik): <b>Uređaji → Dodaj uređaj</b>. Odaberi mobitel pod <b>Pronađeno u blizini</b> i upiši šesteroznamenkasti kod ili skeniraj QR kod drugim mobitelom.</li>
+        <li>Prihvati na mobitelu. Od tada se prepoznaju, čak i kad se IP adrese promijene. Uređaj koji doda glavni uređaj sam postaje <b>Pomoćnik</b>.</li>
+      </ol>
+      <p>Isti koraci sa slikama: <a href="install.html#pair">Kako instalirati → Uparivanje s mobitelom</a>.</p>
+      <p>Dva mobitela istog modela? Preimenuj ih s prijenosnika: olovka pokraj imena na zaslonu Uređaji.</p>
+    </section>
+
+    <section id="roles">
+      <h2>Glavni, Pomoćnik, Nadzor</h2>
+      <p>Oznaka u gornjem desnom kutu pokazuje ulogu ovog uređaja; dodirni je da je promijeniš.</p>
+      <ul>
+        <li><b>Glavni uređaj</b> (obično prijenosnik): pokreće Solo, Veliki model, Tim i Poveži te prikuplja stanje ostalih.</li>
+        <li><b>Pomoćnik</b> (mobiteli): posuđuje memoriju Velikom modelu ili radi dijelove Tima. Zaslon pokazuje što radi, temperaturu i bateriju. <b>Prestani pomagati</b> kad god želiš.</li>
+        <li><b>Nadzor</b> (npr. stari tablet): samo prikazuje nadzornu ploču svih uređaja.</li>
+      </ul>
+    </section>
+
+    <section id="big-model">
+      <h2>5. Veliki model</h2>
+      <p>Za modele prevelike za jedan uređaj: prijenosnik drži dio modela, mobiteli ostatak, a svaka riječ preko Wi‑Fija prolazi kroz sve njih.</p>
+      <ol>
+        <li>Model mora biti na glavnom uređaju. Pomoćnicima ne treba: svoj dio primaju pri pokretanju (i čuvaju ga za sljedeći put).</li>
+        <li><b>Veliki model → 1 · Odaberi model → 2 · Odaberi uređaje</b> (prijedlog koristi najmanje uređaja koji su dovoljni) <b>→ 3 · Provjeri stane li → Pokreni Veliki model</b>.</li>
+        <li>Razgovaraj kao u Solu. Kad završiš: <b>Zaustavi i oslobodi uređaje</b>.</li>
+      </ol>
+      <p>Ako mobitel ispadne (Wi‑Fi, baterija), razgovor ostaje: <b>Učitaj ponovno bez</b> njega ili ga pričekaj i pokušaj ponovno.</p>
+      <p class="note">Brže: Postavke → Veliki model → <b>Model za nacrt: Automatski</b> (mali model iste obitelji na prijenosniku pogađa riječi, veliki ih provjerava; odgovori ostaju isti) i <b>Kontekst u 8 bita</b>. Manje uređaja je brže: svaki dodaje Wi‑Fi skok svakoj riječi.</p>
+    </section>
+
+    <section id="team">
+      <h2>6. Tim</h2>
+      <p>Za dugi posao: svaki uređaj svojim modelom radi dijelove posla, a jedan piše konačni odgovor.</p>
+      <ol>
+        <li><b>1 · Vrsta posla:</b> Dugi dokument / PDF, Istraživanje / web stranice, Kôd / mnogo datoteka, Skupni posao (prevođenje ili razvrstavanje mnogo stavki), Više pogleda (nekoliko „stručnjaka”, zatim spajanje ili glasanje).</li>
+        <li><b>2 · Ulaz:</b> datoteke (PDF, Word, Excel, PowerPoint, EPUB, tekst; skenirani PDF-ovi čitaju se iz slika), zalijepljeni tekst, web adrese ili mapa s kôdom.</li>
+        <li><b>3 · Uređaji i njihovi modeli</b>, <b>4 · Tko piše konačni odgovor</b> (najjači model), zatim <b>Pokreni posao</b>.</li>
+      </ol>
+      <p>Rezultati ostaju pod <b>Prošli poslovi</b> da ih ponovno otvoriš, kopiraš ili spremiš. Obavijest javlja kad je dugi posao gotov.</p>
+    </section>
+
+    <section id="connect">
+      <h2>7. Poveži: tvoj AI za druge aplikacije</h2>
+      <p><b>Lokalni API:</b> Poveži → uključi ga. Alati koji podržavaju Ollamu ili OpenAI (Open WebUI, dodaci za Obsidian, Continue, Home Assistant, skripte) koriste adresu <code>http://127.0.0.1:11434</code> i model <code>hivemind</code> (učitani model). Podržava i slike, pozive alata i ugrađivanja (preuzmi model za ugrađivanja, npr. Nomic Embed Text).</p>
+      <p><b>Drugi uređaji na Wi‑Fi mreži:</b> uključi „Dopusti drugim uređajima na Wi‑Fi mreži”; treba im ključ prikazan ondje. Aplikacijama na istom uređaju nikad.</p>
+      <p><b>Ako aplikacija traži drugi model:</b> Postavke → „Ako aplikacija traži drugi model”: Pitaj, Promijeni ili Odbij.</p>
+    </section>
+
+    <section id="ask">
+      <h2>Pitaj o tekstu</h2>
+      <ul>
+        <li><b>Windows:</b> kopiraj tekst u bilo kojoj aplikaciji i pritisni <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Space</kbd>. Ili Poveži → Pitaj o međuspremniku, ili izbornik ikone u području obavijesti.</li>
+        <li><b>Android:</b> označi tekst → <b>Ask HiveMind</b> ili <b>Dijeli → HiveMind</b> (tekst, poveznice, fotografije).</li>
+        <li>Zatim: Odgovori, Sažmi, Objasni, Prevedi, Preoblikuj, Pitaj ili <b>Pretvori u radnju</b> (alarm, štoperica, događaj u kalendaru, karta ili nacrt poruke: najprije je vidiš, a ništa se ne događa dok je ne dodirneš).</li>
+        <li><b>Glas:</b> mikrofon u polju za tekst. Na računalima najprije u Modelima preuzmi <b>Whisper base</b>. <b>Pročitaj naglas</b> izgovara odgovor.</li>
+        <li><b>Android asistent:</b> Android Postavke → Aplikacije → Zadane aplikacije → Aplikacija digitalnog asistenta → HiveMind. Dugi pritisak tipke za uključivanje ili početne tipke daje HiveMindu tekst sa zaslona (i snimku zaslona, ako je dopušteno).</li>
+        <li><b>Obavijesti (Android):</b> Poveži → Sažetak obavijesti: sažetak zadnjih obavijesti i odgovori koje sam provjeriš i pošalješ.</li>
+      </ul>
+    </section>
+
+    <section id="settings">
+      <h2>8. Korisne postavke</h2>
+      <ul>
+        <li><b>Jezik:</b> Sustav, English ili Hrvatski.</li>
+        <li><b>Učitaj zadnji model pri pokretanju:</b> API i Pitaj o tekstu rade odmah nakon ponovnog pokretanja.</li>
+        <li><b>Nastavi raditi kad se prozor zatvori</b> i <b>Pokreni s Windowsima</b>: prijenosnik i dalje pomaže iz područja obavijesti (pokraj sata). Zatvara se iz izbornika te ikone.</li>
+        <li><b>Veličina konteksta:</b> dulja pamti više razgovora, ali treba više memorije.</li>
+        <li><b>Zaštite:</b> pomoćnik pauzira kad je prevruć, a u pozadinskom načinu i kad je baterija slaba.</li>
+        <li><b>O aplikaciji:</b> verzija i datum izdanja; javlja kad drugi uređaj ima novije izdanje.</li>
+      </ul>
+    </section>
+
+    <section id="phones">
+      <h2>Da mobiteli i dalje pomažu</h2>
+      <p>Mnogi mobiteli (Xiaomi/HyperOS, Honor/MagicOS, Samsung) zaustavljaju aplikacije u pozadini. Na pomoćniku zaslon Stanje (i Postavke) prikazuje <b>Pomaži i u pozadini</b> s koracima za tvoju marku mobitela i tipkom za svaku stranicu postavki. Napravi to jednom.</p>
+      <p>Najbolje za duge poslove: mobiteli na punjaču, u načinu <b>Namjenski</b> (zaslon Stanje), s uključenim zaslonom.</p>
+    </section>
+
+    <section id="ads">
+      <h2>Oglasi (Android)</h2>
+      <p>Android aplikacija prikazuje jedan mali oglas, označen <b>Ad</b> (oglas), na kraju zaslona Početna, Uređaji, Ovaj uređaj, Modeli i Nadzorna ploča; nikad u razgovorima i poslovima. Dodirni <b>Ukloni oglase</b> pokraj oznake uloge i pogledaj jedan kratki video: <b>10 sati</b> bez oglasa na tom uređaju. Tvoji razgovori i datoteke nikad ne napuštaju tvoje uređaje; oglase prikazuje Google. Postavke → Općenito → <b>Privatnost oglasa</b> mijenja tvoju privolu (EU).</p>
+    </section>
+
+    <section id="update">
+      <h2>Ažuriranje</h2>
+      <p>Mobiteli se ažuriraju s Google Playa. Računala: preuzmi novu verziju i stavi je umjesto stare (<a href="install.html#update">kako</a>). <b>Svi uređaji trebaju imati isto izdanje</b>: Velikom modelu treba isti pogon posvuda. Postavke → O aplikaciji i zaslon Uređaji prikazuju izdanje svakog uređaja.</p>
+    </section>
+
+    <section id="trouble">
+      <h2>Rješavanje problema</h2>
+      <ul>
+        <li><b>Uređaji se ne pronalaze:</b> ista Wi‑Fi mreža (ne mreža za goste); na Windowsima dopusti HiveMind na privatnim mrežama; ili upiši adresu drugog uređaja (prikazana je uz njegov kod za uparivanje) umjesto „Pronađeno u blizini”.</li>
+        <li><b>Mobitel prestane pomagati:</b> <a href="#phones">Da mobiteli i dalje pomažu</a>; na nadzornoj ploči provjeri pauze zbog topline ili baterije.</li>
+        <li><b>Model ne stane ili je jako spor:</b> odaberi manji („Stane na ovaj uređaj”) ili koristi Veliki model s pomoćnicima. Zatvori druge velike aplikacije.</li>
+        <li><b>Veliki model je spor:</b> manje uređaja, Wi‑Fi na 5 GHz, uključen model za nacrt, mobiteli blizu usmjerivača.</li>
+        <li><b>Nešto drugo:</b> Postavke → O aplikaciji pokazuje verziju; javi nam što si napravio i što se dogodilo.</li>
+      </ul>
+    </section>
+  </div>
+</main>
+<footer>HiveMind · <a href="./">Preuzimanje</a> · <a href="install.html">Kako instalirati</a> · <a href="https://github.com/kreso19052026/hivemind-apps/releases">Izdanja</a></footer>
+</body>
+</html>

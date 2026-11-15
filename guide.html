@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en" data-repo="kreso19052026/hivemind-apps">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HiveMind user guide</title>
+  <meta name="description" content="How to install and use HiveMind: Solo, Big Model, Team, Connect, pairing devices and troubleshooting.">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="./"><img src="img/icon.svg" alt="">HiveMind</a>
+  <nav>
+    <a href="./#download">Download</a>
+    <a href="install.html">How to install</a>
+    <a href="guide.html">User guide</a>
+    <a href="hr/guide.html" lang="hr">Hrvatski</a>
+  </nav>
+</div></header>
+
+<main class="guide">
+  <aside>
+    <a href="#install">1. Install</a>
+    <a href="#windows-blocked">Windows blocks the app</a>
+    <a href="#solo">2. Your first chat (Solo)</a>
+    <a href="#models">3. Models</a>
+    <a href="#devices">4. Add your devices</a>
+    <a href="#roles">Main, Helper, Monitor</a>
+    <a href="#big-model">5. Big Model</a>
+    <a href="#team">6. Team</a>
+    <a href="#connect">7. Connect: other apps</a>
+    <a href="#ask">Ask about text</a>
+    <a href="#settings">8. Useful settings</a>
+    <a href="#phones">Keep phones helping</a>
+    <a href="#ads">Ads (Android)</a>
+    <a href="#update">Updating</a>
+    <a href="#trouble">Troubleshooting</a>
+  </aside>
+
+  <div>
+    <h1>User guide</h1>
+    <p class="muted">HiveMind runs AI models on your own laptop and phones. The AI works on your devices, with no account and no cloud (unless you add one yourself).</p>
+
+    <section id="install">
+      <h2>1. Install</h2>
+      <p><b>Android:</b> install HiveMind from <a href="https://play.google.com/store/apps/details?id=dev.hivemind.hivemind">Google Play</a> and allow notifications.</p>
+      <p><b>Windows and Linux:</b> follow <a href="install.html">How to install</a>, step by step with pictures: download, unzip, start HiveMind, allow it on your home network, pair it with your phone. On the phone, <b>Devices → Add your computer → Send link to computer</b> sends you the address of this website (by e-mail, a message or Quick Share).</p>
+      <p>The program and the AI engine come together; nothing else to install. Models are downloaded inside the app.</p>
+    </section>
+
+    <section id="windows-blocked">
+      <h2>Windows blocks the app</h2>
+      <p>HiveMind isn't code-signed yet, so Windows is careful with it (more in <a href="install.html#trouble">How to install → Something didn't work</a>):</p>
+      <ul>
+        <li><b>"Windows protected your PC"</b> (SmartScreen): click <b>More info → Run anyway</b>. Unblocking the zip before unzipping avoids it.</li>
+        <li><b>"Smart App Control blocked an app that may be unsafe"</b> (Windows 11): there's no "run anyway" for one app. You can turn Smart App Control off in Windows Security → App &amp; browser control → Smart App Control. On some Windows versions it can't be turned back on without reinstalling Windows, so decide carefully, or wait for the Microsoft Store version, which is signed.</li>
+      </ul>
+    </section>
+
+    <section id="solo">
+      <h2>2. Your first chat (Solo)</h2>
+      <ol>
+        <li>Download a model first (<a href="#models">Models</a>).</li>
+        <li>Open <b>Solo</b>, pick the model at the top, press <b>Load</b>. Large models take a while on a phone or an older laptop.</li>
+        <li>Type and press Enter (Shift+Enter for a new line).</li>
+      </ol>
+      <p>Above the chat:</p>
+      <ul>
+        <li><b>Saved chats</b> (clock): every chat is saved after each answer. Tap one to continue it, or rename or delete it.</li>
+        <li><b>Think</b> (Qwen3 models): on, the model thinks before answering (better for hard questions); off, it answers at once.</li>
+        <li><b>Instructions</b> (sliders): tell the model how to answer, e.g. "Answer in Croatian" or a ready-made one such as Teacher or Translator.</li>
+        <li><b>Export</b> saves the chat as a Markdown file. <b>New chat</b> starts over (the old one stays saved).</li>
+      </ul>
+      <p>Under each message: <b>Copy</b>, <b>Read aloud</b>, <b>Answer again</b> (the last answer) and <b>Edit and ask again</b> (your questions).</p>
+      <p><b>Files and pictures:</b> the paperclip attaches a PDF, Word, Excel, PowerPoint, EPUB or text file; ask about it in the same message. A file too long for the model offers <b>Team → Document</b>. Pictures need a model marked <b>"reads pictures"</b> (e.g. Qwen3-VL 2B).</p>
+    </section>
+
+    <section id="models">
+      <h2>3. Models</h2>
+      <ul>
+        <li><b>Catalog:</b> every row says <b>Fits this device</b>, <b>Fits with Big Model</b> (with your helpers) or <b>Too big</b>. Search, filter by kind (chat, reads pictures, voice and embeddings), <b>Only what fits</b>, sort by size. Select several and download them together; you accept each model's license first.</li>
+        <li><b>Add from a Hugging Face link:</b> paste a link to a <code>.gguf</code> file to add a model that isn't in the catalog. The download is checked like the others.</li>
+        <li><b>On this device:</b> what's stored; delete to free space; <b>Send to…</b> copies a model to a paired device over Wi‑Fi (or to all helpers at once).</li>
+        <li><b>Other devices:</b> what your other devices have; the main device can delete a helper's model.</li>
+      </ul>
+      <p class="note">A good start: <b>Qwen3 4B Instruct</b> on a laptop or a strong phone, <b>Qwen3 1.7B</b> on an older phone, <b>Qwen3-VL 2B</b> for pictures.</p>
+    </section>
+
+    <section id="devices">
+      <h2>4. Add your devices</h2>
+      <ol>
+        <li>Put all devices on the <b>same Wi‑Fi</b> and start HiveMind on each.</li>
+        <li>On the device you're adding (a phone): <b>Show pairing code</b> (Devices screen, or Status on a helper).</li>
+        <li>On the main device (the laptop): <b>Devices → Add device</b>. Pick the phone under <b>Found nearby</b> and type the 6-digit code, or scan the QR code with another phone.</li>
+        <li>Accept on the phone. From then on they recognise each other, even when IP addresses change. A device added by the main device becomes a <b>Helper</b> by itself.</li>
+      </ol>
+      <p>The same steps with pictures: <a href="install.html#pair">How to install → Pair with your phone</a>.</p>
+      <p>Two phones of the same model? Rename them from the laptop: the pencil next to the name on the Devices screen.</p>
+    </section>
+
+    <section id="roles">
+      <h2>Main, Helper, Monitor</h2>
+      <p>The sign in the top-right corner shows this device's role; tap it to change it.</p>
+      <ul>
+        <li><b>Main device</b> (usually the laptop): runs Solo, Big Model, Team and Connect, and collects the others' status.</li>
+        <li><b>Helper</b> (phones): lends memory to Big Model or works on Team parts. Its screen shows what it's doing, its temperature and battery. <b>Stop helping</b> any time.</li>
+        <li><b>Monitor</b> (e.g. an old tablet): only shows the Dashboard of all devices.</li>
+      </ul>
+    </section>
+
+    <section id="big-model">
+      <h2>5. Big Model</h2>
+      <p>For models too big for one device: the laptop keeps part of the model, the phones hold the rest, and every word passes through all of them over Wi‑Fi.</p>
+      <ol>
+        <li>The model must be on the main device. The helpers don't need it: they receive their part when it starts (and keep it in a cache for next time).</li>
+        <li><b>Big Model → 1 · Pick a model → 2 · Choose devices</b> (the suggestion uses the fewest devices that fit) <b>→ 3 · Check the fit → Start Big Model</b>.</li>
+        <li>Chat as in Solo. <b>Stop and free devices</b> when done.</li>
+      </ol>
+      <p>If a phone drops out (Wi‑Fi, battery), the chat is kept: <b>Reload without</b> it, or wait for it and retry.</p>
+      <p class="note">Faster: Settings → Big Model → <b>Draft model: Auto</b> (a small model of the same family on the laptop guesses words, and the big one checks them; the answers stay the same) and <b>Context in 8 bits</b>. Fewer devices is faster: each one adds a Wi‑Fi hop to every word.</p>
+    </section>
+
+    <section id="team">
+      <h2>6. Team</h2>
+      <p>For long work: every device runs its own model on parts of the job, and one writes the final answer.</p>
+      <ol>
+        <li><b>1 · Job type:</b> Long document / PDF, Research / web pages, Code / many files, Batch work (translate or classify many items), Multi-view (several "experts", then merge or vote).</li>
+        <li><b>2 · Input:</b> files (PDF, Word, Excel, PowerPoint, EPUB, text; scanned PDFs are read from their pictures), pasted text, web addresses or a folder of code.</li>
+        <li><b>3 · Devices and their models</b>, <b>4 · Who writes the final answer</b> (the strongest model), then <b>Start job</b>.</li>
+      </ol>
+      <p>Results stay under <b>Past jobs</b> to reopen, copy or save. A notification tells you when a long job is done.</p>
+    </section>
+
+    <section id="connect">
+      <h2>7. Connect: your AI for other apps</h2>
+      <p><b>Local API:</b> Connect → switch it on. Tools that support Ollama or OpenAI (Open WebUI, Obsidian plugins, Continue, Home Assistant, scripts) use the address <code>http://127.0.0.1:11434</code> and the model <code>hivemind</code> (the loaded model). It also does pictures, tool calls and embeddings (download an embedding model such as Nomic Embed Text).</p>
+      <p><b>Other devices on the Wi‑Fi:</b> switch on "Allow other devices on the Wi‑Fi"; they need the key shown there. Apps on the same device never do.</p>
+      <p><b>If an app asks for a different model:</b> Settings → "If an app asks for another model": Ask, Switch or Refuse.</p>
+    </section>
+
+    <section id="ask">
+      <h2>Ask about text</h2>
+      <ul>
+        <li><b>Windows:</b> copy text in any app and press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Space</kbd>. Or Connect → Ask about the clipboard, or the tray icon menu.</li>
+        <li><b>Android:</b> select text → <b>Ask HiveMind</b>, or <b>Share → HiveMind</b> (text, links, photos).</li>
+        <li>Then: Answer, Summarize, Explain, Translate, Rewrite, Ask, or <b>Make it an action</b> (an alarm, timer, calendar event, map or message draft: you see it first, and nothing happens until you tap it).</li>
+        <li><b>Voice:</b> the microphone in the text box. On computers, download <b>Whisper base</b> in Models first. <b>Read aloud</b> speaks the answer.</li>
+        <li><b>Android assistant:</b> Android Settings → Apps → Default apps → Digital assistant app → HiveMind. A long press on the power or home button gives HiveMind the text on your screen (and a screenshot, if allowed).</li>
+        <li><b>Notifications (Android):</b> Connect → Notification digest: a summary of your latest notifications, and replies you check and send yourself.</li>
+      </ul>
+    </section>
+
+    <section id="settings">
+      <h2>8. Useful settings</h2>
+      <ul>
+        <li><b>Language:</b> System, English or Hrvatski.</li>
+        <li><b>Load the last model at start:</b> the API and Ask about text work right after a restart.</li>
+        <li><b>Keep running when the window closes</b> and <b>Start with Windows</b>: the laptop keeps helping from the tray (next to the clock). Quit from the tray icon's menu.</li>
+        <li><b>Context size:</b> longer remembers more of the chat but needs more memory.</li>
+        <li><b>Safety guards:</b> a helper pauses when too hot, and in Background mode at low battery.</li>
+        <li><b>About:</b> the version and build date; it tells you when another device has a newer build.</li>
+      </ul>
+    </section>
+
+    <section id="phones">
+      <h2>Keep phones helping</h2>
+      <p>Many phones (Xiaomi/HyperOS, Honor/MagicOS, Samsung) stop apps in the background. On a helper, the Status screen (and Settings) shows <b>Keep helping in the background</b> with the steps for your phone's brand and a button for each settings page. Do it once.</p>
+      <p>Best for long jobs: phones plugged in, in <b>Dedicated</b> mode (Status screen), with the screen on.</p>
+    </section>
+
+    <section id="ads">
+      <h2>Ads (Android)</h2>
+      <p>The Android app shows one small ad, marked <b>Ad</b>, at the end of Home, Devices, This device, Models and Dashboard; never in chats or jobs. Tap <b>Remove ads</b> next to the role sign and watch one short video: no ads on that device for <b>10 hours</b>. Your chats and files never leave your devices; ads are shown by Google. Settings → General → <b>Ad privacy choices</b> changes your consent (EU).</p>
+    </section>
+
+    <section id="update">
+      <h2>Updating</h2>
+      <p>Phones update from Google Play. Computers: download the new version and put it in place of the old one (<a href="install.html#update">how</a>). <b>All devices should run the same build</b>: Big Model needs the same engine everywhere. Settings → About and the Devices screen show each device's build.</p>
+    </section>
+
+    <section id="trouble">
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li><b>Devices don't find each other:</b> the same Wi‑Fi (not a guest network); on Windows allow HiveMind on private networks; or type the other device's address (shown on its pairing code) instead of "Found nearby".</li>
+        <li><b>A phone stops helping:</b> <a href="#phones">Keep phones helping</a>; check the Dashboard for heat or battery pauses.</li>
+        <li><b>The model doesn't fit or is very slow:</b> pick a smaller one ("Fits this device"), or use Big Model with helpers. Close other big apps.</li>
+        <li><b>Big Model is slow:</b> fewer devices, 5 GHz Wi‑Fi, the draft model on, phones close to the router.</li>
+        <li><b>Something else:</b> Settings → About shows the version; tell us what you did and what happened.</li>
+      </ul>
+    </section>
+  </div>
+</main>
+<footer>HiveMind · <a href="./">Download</a> · <a href="install.html">How to install</a> · <a href="https://github.com/kreso19052026/hivemind-apps/releases">Releases</a></footer>
+</body>
+</html>

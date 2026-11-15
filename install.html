@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" data-repo="kreso19052026/hivemind-apps">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to install HiveMind</title>
+  <meta name="description" content="Install HiveMind on Windows or Linux and pair it with your phone, step by step with pictures.">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="./"><img src="img/icon.svg" alt="">HiveMind</a>
+  <nav>
+    <a href="./#download">Download</a>
+    <a href="install.html">How to install</a>
+    <a href="guide.html">User guide</a>
+    <a href="hr/install.html" lang="hr">Hrvatski</a>
+  </nav>
+</div></header>
+
+<main>
+  <h1>How to install HiveMind on your computer</h1>
+  <p class="muted">About 10 minutes. You need the computer, your phone with HiveMind, and one Wi‑Fi network for both.</p>
+  <div class="tabs">
+    <a href="#windows">1 · Install on Windows</a>
+    <a href="#linux">1 · Install on Linux</a>
+    <a href="#pair">2 · Pair with your phone</a>
+    <a href="#first-chat">3 · Your first chat</a>
+    <a href="#trouble">Something didn't work</a>
+  </div>
+
+  <!-- ============================================================ Windows -->
+  <section class="part" id="windows">
+    <h2>Install on Windows <span class="muted">Windows 10 or 11, 64-bit</span></h2>
+    <ol class="steps">
+      <li>
+        <h3>Download</h3>
+        <p><a class="btn" href="https://github.com/kreso19052026/hivemind-apps/releases/latest/download/HiveMind-windows-x64.zip">Download for Windows</a> <span class="muted small" data-size="HiveMind-windows-x64.zip"></span></p>
+        <p class="small muted">If the browser says the file "isn't commonly downloaded": open the downloads list, click <span class="ui">…</span> next to the file → <span class="ui">Keep</span> (Edge also asks <span class="ui">Keep anyway</span>).</p>
+      </li>
+      <li>
+        <h3>Unblock the zip (recommended)</h3>
+        <p>Open your <b>Downloads</b> folder. Right-click <code>HiveMind-windows-x64.zip</code> → <span class="ui">Properties</span>. At the bottom, tick <span class="ui">Unblock</span> → <span class="ui">OK</span>.</p>
+        <p class="small muted">This spares you a blue warning when HiveMind starts. No "Unblock" box? Then skip this step.</p>
+      </li>
+      <li>
+        <h3>Unzip it</h3>
+        <p>Right-click the zip → <span class="ui">Extract All…</span> → pick a place you'll find again, for example <b>Documents</b> → <span class="ui">Extract</span>.</p>
+        <p class="small muted">Don't start HiveMind from inside the zip: it needs the files next to it.</p>
+      </li>
+      <li>
+        <h3>Start HiveMind</h3>
+        <p>Open the <b>HiveMind</b> folder and double-click <code>hivemind.exe</code>.</p>
+        <div class="box"><b>"Windows protected your PC"?</b>Click <span class="ui">More info</span> → <span class="ui">Run anyway</span>. Windows shows this for new programs that aren't signed yet. It appears once.</div>
+        <div class="box"><b>"Smart App Control blocked an app"?</b>See <a href="#smart-app-control">Smart App Control</a> below.</div>
+      </li>
+      <li>
+        <h3>Allow it on your home network</h3>
+        <p>Windows asks once: tick <span class="ui">Private networks</span> → <span class="ui">Allow access</span>. This lets your phone find the computer. Leave "Public networks" unticked.</p>
+        <p class="small muted">The question may only come the first time HiveMind looks for devices (step 2 below).</p>
+      </li>
+      <li>
+        <h3>Easier next time (optional)</h3>
+        <p>Right-click <code>hivemind.exe</code> → <span class="ui">Pin to Start</span> (Windows 11: <span class="ui">Show more options</span> first), or <span class="ui">Send to</span> → <span class="ui">Desktop (create shortcut)</span>. In HiveMind, <b>Settings</b> → <span class="ui">Start with Windows</span> keeps it ready in the tray, next to the clock.</p>
+      </li>
+    </ol>
+    <p>Next: <a href="#pair">pair it with your phone</a>.</p>
+  </section>
+
+  <!-- ============================================================ Linux -->
+  <section class="part" id="linux">
+    <h2>Install on Linux <span class="muted">64-bit, Ubuntu 22.04 or newer, Debian 12, Fedora, Mint 21 or newer</span></h2>
+    <ol class="steps">
+      <li>
+        <h3>Download</h3>
+        <p><a class="btn" href="https://github.com/kreso19052026/hivemind-apps/releases/latest/download/HiveMind-linux-x64.tar.gz">Download for Linux</a> <span class="muted small" data-size="HiveMind-linux-x64.tar.gz"></span></p>
+      </li>
+      <li>
+        <h3>Unpack it</h3>
+        <p>In your file manager: right-click the file → <span class="ui">Extract Here</span>, and move the <b>HiveMind</b> folder to your home folder. Or in a terminal:</p>
+        <pre><code>tar -xzf ~/Downloads/HiveMind-linux-x64.tar.gz -C ~</code></pre>
+      </li>
+      <li>
+        <h3>Add it to the app menu</h3>
+        <p>In a terminal:</p>
+        <pre><code>~/HiveMind/install.sh</code></pre>
+        <p class="small muted">It only adds a menu entry with the icon, for your user; no password needed. Moved the folder later? Run it again.</p>
+      </li>
+      <li>
+        <h3>Start HiveMind</h3>
+        <p>Search for <b>HiveMind</b> in your app menu. Or in a terminal: <code>~/HiveMind/hivemind</code></p>
+      </li>
+      <li>
+        <h3>Let devices find each other</h3>
+        <p>"Found nearby" uses <code>avahi-daemon</code>, which desktop Ubuntu, Fedora and Mint already run. If you turned on a firewall (<code>ufw</code>), allow HiveMind's port and device discovery:</p>
+        <pre><code>sudo ufw allow 47800:47801/tcp
+sudo ufw allow 5353/udp</code></pre>
+      </li>
+    </ol>
+    <p>Next: <a href="#pair">pair it with your phone</a>.</p>
+  </section>
+
+  <!-- ============================================================ Pairing -->
+  <section class="part" id="pair">
+    <h2>Pair with your phone</h2>
+    <p>Put the phone and the computer on the <b>same Wi‑Fi</b> and open HiveMind on both. The computer becomes the <b>main device</b> (it runs the models); the phone becomes its <b>helper</b>.</p>
+    <ol class="steps">
+      <li>
+        <h3><span class="who phone">Phone</span>Show the pairing code</h3>
+        <p>Open <b>Devices</b> → <span class="ui">Show pairing code</span>. Keep this screen open: the code is valid for 5 minutes.</p>
+        <figure><a href="img/en/phone-pairing-code.png" title="Open full size"><img class="shot phone" src="img/en/phone-pairing-code.png" alt="The phone shows a QR code and the six-digit code 482 913." loading="lazy" width="780" height="1688"></a></figure>
+      </li>
+      <li>
+        <h3><span class="who pc">Computer</span>Add the phone</h3>
+        <p>Open <b>Devices</b> → <span class="ui">Add device</span>. Pick your phone under <b>Found nearby</b>, type the 6-digit code from the phone → <span class="ui">Pair</span>.</p>
+        <figure><a href="img/en/computer-add-device.png" title="Open full size"><img class="shot pc" src="img/en/computer-add-device.png" alt="On the computer: Add a device, the phone selected under Found nearby, the code typed in." loading="lazy" width="1770" height="1110"></a></figure>
+        <div class="box"><b>Your phone isn't in the list?</b>Type its address in <span class="ui">Or its address</span>: the phone shows it under the code (for example <code>192.168.1.23</code>). Still nothing? See <a href="#not-found">The phone and computer don't find each other</a>.</div>
+      </li>
+      <li>
+        <h3><span class="who phone">Phone</span>Accept</h3>
+        <p>The phone asks whether to pair with your computer → <span class="ui">Accept</span>.</p>
+        <figure><a href="img/en/phone-accept.png" title="Open full size"><img class="shot phone" src="img/en/phone-accept.png" alt="The phone asks: Pair with My laptop? Accept or Decline." loading="lazy" width="780" height="1688"></a></figure>
+      </li>
+      <li>
+        <h3><span class="who pc">Computer</span>Done</h3>
+        <p>Your phone is on the computer's Devices screen as a <b>Helper</b>, with a green dot while it's connected. From now on they find each other by themselves, even when their addresses change.</p>
+        <figure><a href="img/en/computer-paired.png" title="Open full size"><img class="shot pc" src="img/en/computer-paired.png" alt="The computer's Devices screen: My laptop (this device, main) and My phone (helper, online)." loading="lazy" width="1770" height="1110"></a></figure>
+        <p class="small muted">Want to use the phone on its own again? On the phone, tap the sign at the top right → <span class="ui">Main device</span>. More phones? Repeat steps 1–3 for each.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============================================================ First chat -->
+  <section class="part" id="first-chat">
+    <h2>Your first chat on the computer</h2>
+    <ol class="steps">
+      <li><h3>Get a model</h3><p><b>Models</b> → <b>Catalog</b>: pick one marked <b>Fits this device</b> → <span class="ui">Download</span>. <b>Qwen3 4B Instruct</b> is a good start on most laptops (about 2.5 GB).</p></li>
+      <li><h3>Chat</h3><p><b>Solo</b> → pick the model at the top → <span class="ui">Load</span> → type a question and press Enter.</p></li>
+      <li><h3>Use your phone's memory</h3><p>For a model too big for the computer alone: <b>Big Model</b>. For long documents: <b>Team</b>. The <a href="guide.html">user guide</a> explains both.</p></li>
+    </ol>
+  </section>
+
+  <!-- ============================================================ Troubleshooting -->
+  <section class="part" id="trouble">
+    <h2>Something didn't work</h2>
+
+    <details id="not-found">
+      <summary>The phone and computer don't find each other</summary>
+      <ul>
+        <li>Both on the <b>same Wi‑Fi</b>, not a guest network, and HiveMind open on both.</li>
+        <li><b>Windows:</b> your Wi‑Fi must be a <b>private</b> network: Settings → Network &amp; internet → Wi‑Fi → your network → <span class="ui">Private network</span>.</li>
+        <li><b>Windows:</b> if you clicked "Cancel" when Windows asked about the network: Windows Security → Firewall &amp; network protection → <span class="ui">Allow an app through firewall</span> → <span class="ui">Change settings</span> → tick <b>Private</b> next to every <b>hivemind</b> entry → OK.</li>
+        <li><b>Linux:</b> the <code>ufw</code> lines in <a href="#linux">step 5</a>.</li>
+        <li>Instead of "Found nearby", type the phone's address (shown under its pairing code).</li>
+        <li>Some routers keep devices apart ("AP isolation" or "client isolation"); turn that off in the router, or use another network.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>"The code expired" or "wrong code"</summary>
+      <p>A code works for 5 minutes and 5 tries. On the phone tap <span class="ui">Show a new code</span> and type the new one.</p>
+    </details>
+
+    <details id="smart-app-control">
+      <summary>Windows 11: "Smart App Control blocked an app that may be unsafe"</summary>
+      <p>Smart App Control blocks every program that isn't signed, and has no "run anyway" for a single program. HiveMind isn't signed yet. You can:</p>
+      <ul>
+        <li>wait for the signed version of HiveMind (Microsoft Store), or</li>
+        <li>turn Smart App Control off: Windows Security → App &amp; browser control → Smart App Control settings → <span class="ui">Off</span>. On some versions of Windows it can't be turned back on without reinstalling Windows, so decide carefully.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Windows: nothing happens, or a message about a missing DLL</summary>
+      <p>Make sure you unzipped the whole zip (step 3) and start <code>hivemind.exe</code> from the unzipped <b>HiveMind</b> folder. If your antivirus moved a file to quarantine (for example <code>llama-server.exe</code>, the AI engine), restore it and allow it.</p>
+    </details>
+
+    <details>
+      <summary>Linux: HiveMind doesn't start</summary>
+      <p>Start it in a terminal to see why: <code>~/HiveMind/hivemind</code></p>
+      <ul>
+        <li><code>libgtk-3.so.0</code> missing: <code>sudo apt install libgtk-3-0</code> (Fedora: <code>sudo dnf install gtk3</code>).</li>
+        <li><code>libgomp.so.1</code> missing (the model doesn't load): <code>sudo apt install libgomp1</code> (Fedora: <code>sudo dnf install libgomp</code>).</li>
+        <li><code>GLIBC_2.34 not found</code>: your Linux is too old (for example Ubuntu 20.04). Ubuntu 22.04 or newer is needed.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>The phone stops helping after a while</summary>
+      <p>Many phones stop apps in the background. On the phone, HiveMind shows <b>Keep helping in the background</b> with the steps for your phone's brand; do them once. See <a href="guide.html#phones">Keep phones helping</a>.</p>
+    </details>
+  </section>
+
+  <!-- ============================================================ Update / remove -->
+  <section class="part" id="update">
+    <h2>Update or remove</h2>
+    <ul>
+      <li><b>Update:</b> download the new version, quit HiveMind (Windows: the tray icon next to the clock → <span class="ui">Quit</span>; Linux: close its window), and put the new <b>HiveMind</b> folder in place of the old one. Your models, chats and paired devices stay: they're kept in your user folder, not in the HiveMind folder. Update the phone too: all devices should run the same version.</li>
+      <li><b>Remove on Windows:</b> in HiveMind turn off <span class="ui">Start with Windows</span>, quit it, and delete the HiveMind folder. To delete your models and chats too, delete <code>%APPDATA%\dev.hivemind</code>.</li>
+      <li><b>Remove on Linux:</b> <code>~/HiveMind/install.sh --remove</code>, then delete the HiveMind folder. Models and chats: <code>~/.local/share/dev.hivemind.hivemind</code>.</li>
+    </ul>
+  </section>
+</main>
+<footer>HiveMind · <a href="./">Download</a> · <a href="guide.html">User guide</a> · <a href="https://github.com/kreso19052026/hivemind-apps/releases">All releases</a></footer>
+<script src="app.js"></script>
+</body>
+</html>

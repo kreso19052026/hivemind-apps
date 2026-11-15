@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- HiveMind: three cells of a honeycomb on the app's teal. -->
+  <rect width="64" height="64" rx="14" fill="#0B7A80"/>
+  <polygon points="32.00,14.15 40.31,18.95 40.31,28.55 32.00,33.35 23.69,28.55 23.69,18.95" fill="#FFFFFF"/>
+  <polygon points="22.47,30.65 30.79,35.45 30.79,45.05 22.47,49.85 14.16,45.05 14.16,35.45" fill="#FFFFFF"/>
+  <polygon points="41.53,30.65 49.84,35.45 49.84,45.05 41.53,49.85 33.21,45.05 33.21,35.45" fill="#8FE3E6"/>
+</svg>

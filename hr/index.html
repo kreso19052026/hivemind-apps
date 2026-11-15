@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="hr" data-repo="kreso19052026/hivemind-apps">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HiveMind za tvoje računalo</title>
+  <meta name="description" content="Preuzmi HiveMind za Windows ili Linux i koristi ga zajedno s mobitelom. Upute za instalaciju korak po korak.">
+  <link rel="icon" href="../img/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="../img/icon.png" type="image/png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top"><div class="in">
+  <a class="brand" href="./"><img src="../img/icon.svg" alt="">HiveMind</a>
+  <nav>
+    <a href="#download">Preuzimanje</a>
+    <a href="install.html">Kako instalirati</a>
+    <a href="guide.html">Upute</a>
+    <a href="../" lang="en">English</a>
+  </nav>
+</div></header>
+
+<main>
+  <div class="hero">
+    <span class="tag">Za Windows i Linux</span>
+    <h1>HiveMind za tvoje računalo</h1>
+    <p>HiveMind već imaš na mobitelu. Instaliraj ga i na računalo: računalo pokreće veće AI modele, a mobitel mu pomaže. Tvoji razgovori i dokumenti nikad ne napuštaju tvoje uređaje.</p>
+    <p><a class="btn big" href="install.html">Kako instalirati, korak po korak</a></p>
+  </div>
+
+  <h2 id="download">Preuzimanje</h2>
+  <p id="release" class="muted"></p>
+  <div class="grid">
+    <div class="card os-card">
+      <h3>Windows</h3>
+      <p class="muted small">Windows 10 ili 11, 64-bitni. Najbolje s 8 GB memorije (RAM) ili više.</p>
+      <a class="btn" href="https://github.com/kreso19052026/hivemind-apps/releases/latest/download/HiveMind-windows-x64.zip">Preuzmi za Windows</a>
+      <span class="muted small">Zip datoteka <span data-size="HiveMind-windows-x64.zip"></span></span>
+      <a href="install.html#windows">Kako instalirati na Windows</a>
+    </div>
+    <div class="card os-card">
+      <h3>Linux</h3>
+      <p class="muted small">64-bitni (x86-64) s grafičkim sučeljem: Ubuntu 22.04 ili noviji, Debian 12, Fedora, Linux Mint 21 ili noviji.</p>
+      <a class="btn" href="https://github.com/kreso19052026/hivemind-apps/releases/latest/download/HiveMind-linux-x64.tar.gz">Preuzmi za Linux</a>
+      <span class="muted small">tar.gz datoteka <span data-size="HiveMind-linux-x64.tar.gz"></span></span>
+      <a href="install.html#linux">Kako instalirati na Linux</a>
+    </div>
+  </div>
+  <p class="small muted">Još nemaš aplikaciju na mobitelu? <a href="https://play.google.com/store/apps/details?id=dev.hivemind.hivemind">HiveMind na Google Playu</a> (Android 9 ili noviji).</p>
+
+  <h2>Tri koraka</h2>
+  <div class="flow">
+    <div class="card"><span class="where">Na računalu</span><h3>Preuzmi i instaliraj</h3><p class="muted small">Raspakiraj, pokreni HiveMind i dopusti mu kućnu mrežu. Oko 5 minuta.</p></div>
+    <div class="card"><span class="where">Na mobitelu</span><h3>Prikaži kod za uparivanje</h3><p class="muted small">Uređaji → Prikaži kod za uparivanje. Oba uređaja na istoj Wi‑Fi mreži.</p></div>
+    <div class="card"><span class="where">Na računalu</span><h3>Dodaj mobitel</h3><p class="muted small">Uređaji → Dodaj uređaj, odaberi mobitel, upiši kod, prihvati na mobitelu. Gotovo.</p></div>
+  </div>
+  <p><a class="btn secondary" href="install.html">Pokaži mi kako</a></p>
+
+  <h2>Što možeš raditi</h2>
+  <div class="grid">
+    <div class="card"><h3>Solo</h3><p class="muted small">Razgovor s modelom na računalu. Datoteke, slike, spremljeni razgovori.</p></div>
+    <div class="card"><h3>Veliki model</h3><p class="muted small">Mobiteli posuđuju memoriju, pa računalo pokreće model koji sam ne bi mogao.</p></div>
+    <div class="card"><h3>Tim</h3><p class="muted small">Svaki uređaj uzima dio dugog dokumenta ili popisa, a jedan piše odgovor.</p></div>
+    <div class="card"><h3>Poveži</h3><p class="muted small">Druge aplikacije koriste tvoj AI preko adrese kompatibilne s Ollamom i OpenAI-jem.</p></div>
+  </div>
+  <p class="small muted">Sve radi na tvojim uređajima: bez računa, bez oblaka. Sva izdanja: <a href="https://github.com/kreso19052026/hivemind-apps/releases">GitHub Releases</a>.</p>
+</main>
+<footer>HiveMind pokreće otvorene modele uz <a href="https://github.com/ggml-org/llama.cpp">llama.cpp</a>. Svaki model ima svoju licencu, prikazanu prije preuzimanja. · <a href="guide.html">Upute</a></footer>
+<script src="../app.js"></script>
+</body>
+</html>
